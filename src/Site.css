@@ -47,8 +47,7 @@ body{
     align-items: center;
 
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
+   
     position: fixed;
     top: 0;
     right: 0;
