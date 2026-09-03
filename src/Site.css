@@ -13,26 +13,8 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
-
-@font-face {
-  font-family: 'Junicode';
-  src: url('./assets/Fonts/junicode.bold-italic.ttf');
-  font-style: italic;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'JunicodeItalic';
-  src: url('./assets/Fonts/JunicodeItalic.ttf');
-  font-style: italic;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'JunicodeRegular';
-  src: url('./assets/Fonts/junicodeRegular.ttf');
-  font-style: italic;
-  /* font-weight: 800; */
+:root{
+    --title-font: 'Syne', sans-serif;
 }
 
 .navbar{
@@ -147,11 +129,11 @@ body{
 
 .title{
     position: relative;
-    font-size: 2.7rem;
+    font-size: 2.1rem;
     color: #ffffff;
     text-align: center;
     /* font-family: 'Inter', sans-serif; */
-    font-family: 'Junicode';
+    font-family: var(--title-font);
     font-weight: 800;
     z-index: 1;
 
@@ -160,7 +142,7 @@ body{
     /* text-shadow: 0 0 80px #ffffff; */
 }
 
-.title::after{
+/* .title::after{
     position: absolute;
     content: '';
     width: 250px;
@@ -176,7 +158,7 @@ body{
     z-index: -1;
     filter: blur(70px);
     opacity: 0.8;
-}
+} */
 
 .subtxt{
     margin-top: 5px;
@@ -216,7 +198,8 @@ body{
 }
 
 .mt{
-    font-family: 'Junicode';
+    font-family: var(--title-font);
+    font-weight: 700;
     font-size: 1.5rem;
     color: #ffffff;
     z-index: 1;
@@ -258,19 +241,18 @@ body{
 
 }
 
-.box::after{
+/* .box::after{
     position: absolute;
     content: '';
     width: 160px;
     height: 160px;
-    background-color: green;
     border-radius: 50%;
     left: 30%;
     background-color: #3a0966;
     filter: blur(70px);
 
 
-}
+} */
 
 .boxcont{
     font-family: 'Inter', sans-serif;

@@ -34,6 +34,8 @@ function Pocetak() {
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
                 transition={{ duration: 0.8}}
+                viewport={{ once: true}}
+
                 >
 
                     <p className="ptitle">
@@ -52,54 +54,52 @@ function Pocetak() {
 
                 <motion.div 
                 className="pmid"
-                    
+                // initial={{ opacity: 0}}
+                // whileInView={{ opacity: 1}}
+                // transition={{ duration: 0.8}}
                 >
 
                     <motion.p 
                         className="ptitletwo"
                         initial={{ opacity: 0}}
-                animate={{ opacity: 1}}
+                whileInView={{ opacity: 1}}
                 transition={{ duration: 0.8}}
+                viewport={{ once: true}}
+
                     >
                         Kako da ucim programiranje?
                     </motion.p>
 
                     <motion.p 
                     className="psubtxttwo"
-                    style={{ zIndex: 1}}
-                   initial={{ opacity: 0}}
-                animate={{ opacity: 1}}
+                    initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
                 transition={{ duration: 0.8}}
+                viewport={{ once: true}}
 
+                   >
 
-                    >
                         Učenje programiranja najbrže napreduje kada se ne zaglaviš
                         u takozvanom „tutorial circle-u“ (beskonačnom gledanju tutorijala bez pisanja koda).
                         Ključ je u <strong>30%</strong>  teorije i <strong>70%</strong> praktičnog rada.
 
-
-
-
-
                     </motion.p>
 
-                    <div 
-                    className="psmer">
+                    
 
                         {/* <p className="psubtit">Izaberi jedan smer br i <br /> drzi ga se</p> */}
                         <motion.p
                             className="psubtxtthree"
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ duration: 0.8 }}
-                            viewport={{ once: true}}
+                            initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                transition={{ duration: 0.8, delay: 0.2}}
+                viewport={{ once: true}}
                         >
                             Nemoj pokušavati da učiš sve odjednom (npr. i izradu sajtova i
                             veštačku inteligenciju). Fokusiraj se na
                             jednu oblast prvih nekoliko meseci:
                         </motion.p>
 
-                    </div>
 
 
                       
