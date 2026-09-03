@@ -63,7 +63,7 @@ function Site() {
                         className="title"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8 }}
+                        transition={{ duration: 0.3 }}
                     >
                         'Ucenje je <span className="mjk"> majka </span> <br /> <span style={{ fontSize: '2.1rem' }}>ponavljanja</span>'
                     </motion.p>
