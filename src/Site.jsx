@@ -8,6 +8,10 @@ function Site() {
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         const handleScroll = () => {
             if (isOpen) {
                 setIsOpen(false);
@@ -81,7 +85,7 @@ function Site() {
                         className="title"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.6 }}
                     >
                         'Ucenje je <span className="mjk"> majka </span> <br /> <span style={{ fontSize: '2.3rem' }}>ponavljanja</span>'
                     </motion.p>
@@ -90,14 +94,14 @@ function Site() {
                         className="subtxt"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
                     > Sve što ti treba za početak je malo Radoznalosti, strpljenja i dobra volja. </motion.p>
 
                     <Link to='/pocetak' style={{ textDecoration: 'none', zIndex: 1 }} >
                         <motion.button
                             className="btn"
                             initial={{ scale: 1, opacity: 0 }}
-                            animate={{ opacity: 1, transition: { duration: 0.5, delay: 0.3 } }}
+                            animate={{ opacity: 1, transition: { duration: 0.5, delay: 0.6 } }}
                             whileTap={{ scale: 0.9 }}
                         >Pocetak</motion.button>
 
@@ -109,8 +113,8 @@ function Site() {
                 <div className="mid">
                     <motion.p
                         className="mt"
-                        initial={{ opacity: 0, filter: 'blur(5px)' }}
-                        whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
 
@@ -154,8 +158,8 @@ function Site() {
                         <motion.p
                             className="mt"
                             style={{ textAlign: 'center' }}
-                            initial={{ opacity: 0, filter: 'blur(5px)' }}
-                            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
 
@@ -199,8 +203,8 @@ function Site() {
                         <motion.p
                             className="mt"
                             style={{ textAlign: 'center' }}
-                            initial={{ opacity: 0, filter: 'blur(5px)' }}
-                            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+                            initial={{ opacity: 0}}
+                            whileInView={{ opacity: 1}}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
                         >Sta se uci <br /> kod programiranja? </motion.p>
@@ -241,8 +245,8 @@ function Site() {
                         <motion.p
                             className="mt"
                             style={{ textAlign: 'center' }}
-                            initial={{ opacity: 0, filter: 'blur(5px)' }}
-                            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+                            initial={{ opacity: 0}}
+                            whileInView={{ opacity: 1}}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
                         >Sta da radim <br /> jednom kada sam izabrao?</motion.p>
@@ -297,8 +301,8 @@ function Site() {
                     <motion.p
                         className="et"
                         style={{ color: '#ffffff', marginBottom: '100px', fontSize: '1.2rem', fontWeight: '600' }}
-                        initial={{ opacity: 0, filter: 'blur(5px)' }}
-                        whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
