@@ -120,10 +120,10 @@ function Site() {
                     <div className="boxw">
                         <motion.div
                             className="box"
-                            // initial={{ opacity: 0 }}
-                            // whileInView={{ opacity: 1 }}
-                            // transition={{ duration: 0.5 }}
-                            // viewport={{ once: true, amount: 0.2 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true, amount: 0.2 }}
 
                             // initial={{ scale: 0 }}
                             // whileInView={{ scale: 1 }}
