@@ -61,16 +61,22 @@ function Site() {
                 <div className="head">
                     <motion.p
                         className="title"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, filter: 'blur(5px)' }}
+                        animate={{ opacity: 1, filter: 'blur(0px)' }}
+                        transition={{ duration: 0.5 }}
                     >
                         'Ucenje je <span className="mjk"> majka </span> <br /> <span style={{ fontSize: '2.1rem' }}>ponavljanja</span>'
                     </motion.p>
 
-                    <p className="subtxt">
+                    <motion.p 
+                    className="subtxt"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.5, delay: '0.3' }}
+
+                    >
                         Sve što ti treba za početak je malo Radoznalosti, strpljenja i dobra volja.
-                    </p>
+                    </motion.p>
 
                     <Link to='/pocetak' style={{ textDecoration: 'none', zIndex: 1 }}>
                         <motion.button
@@ -79,6 +85,7 @@ function Site() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.5,
+                                delay: '0.4',
                                 type: 'spring'
                                 
                                 
@@ -96,7 +103,7 @@ function Site() {
                         className="mt"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.4 }}
+                        transition={{ duration: 0.4, delay: '0.6' }}
                         viewport={{ once: true, amount: 0.3 }}
                     >
                         Da li je tesko?
@@ -118,10 +125,10 @@ function Site() {
                             // transition={{ duration: 0.5 }}
                             // viewport={{ once: true, amount: 0.2 }}
 
-                            initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{ duration: 0.6, type: 'spring' }}
-                            viewport={{ once: true, margin: '100px' }}
+                            // initial={{ scale: 0 }}
+                            // whileInView={{ scale: 1 }}
+                            // transition={{ duration: 0.6, type: 'spring' }}
+                            // viewport={{ once: true, margin: '100px' }}
                         >
                             <div className="boxcont">
                                 <div className="subtitbw" style={{ marginBottom: '5px' }}>
@@ -153,10 +160,10 @@ function Site() {
 
                         <motion.div
                             className="box"
-                            initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{ duration: 0.6, type: 'spring' }}
-                            viewport={{ once: true }}
+                            // initial={{ scale: 0 }}
+                            // whileInView={{ scale: 1 }}
+                            // transition={{ duration: 0.6, type: 'spring' }}
+                            // viewport={{ once: true }}
                         >
                             <div className="boxcont">
                                 <div className="subtitbw" style={{ marginBottom: '5px' }}>
@@ -188,10 +195,10 @@ function Site() {
 
                         <motion.div
                             className="box"
-                           initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{ duration: 0.6, type: 'spring' }}
-                            viewport={{ once: true }}
+                        //    initial={{ scale: 0 }}
+                        //     whileInView={{ scale: 1 }}
+                        //     transition={{ duration: 0.6, type: 'spring' }}
+                        //     viewport={{ once: true }}
                         >
                             <div className="boxcont">
                                 <div className="subtitbw" style={{ marginBottom: '5px' }}>
@@ -223,10 +230,10 @@ function Site() {
 
                         <motion.div
                             className="box"
-                           initial={{ scale: 0 }}
-                            whileInView={{ scale: 1 }}
-                            transition={{ duration: 0.6, type: 'spring' }}
-                            viewport={{ once: true }}
+                        //    initial={{ scale: 0 }}
+                        //     whileInView={{ scale: 1 }}
+                        //     transition={{ duration: 0.6, type: 'spring' }}
+                        //     viewport={{ once: true }}
                         >
                             <div className="boxcont">
                                 <div className="subtitbw" style={{ marginBottom: '5px' }}>

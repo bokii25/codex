@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.box, .line, .btn {
+  will-change: transform, opacity;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
